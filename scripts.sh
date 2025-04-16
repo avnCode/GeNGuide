@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,1 python3 main.py --config=exps/genguide_cifar.json --noise=0.4 --noise_type='random' --dataset='cifar100' --pretrained='imagenet'

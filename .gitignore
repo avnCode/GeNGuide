@@ -1,0 +1,7 @@
+data/
+logs/
+pretrained/
+__pycache__/
+*.pyc
+.DS_Store
+

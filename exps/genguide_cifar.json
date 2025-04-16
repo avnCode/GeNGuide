@@ -1,0 +1,29 @@
+{
+    "prefix": "reproduce",
+    "dataset_base": "cifar100_224",
+    "mode": "sup20",
+    "memory_size": 0,
+    "memory_per_class": 0,
+    "fixed_memory": false,
+    "shuffle": false,
+    "init_cls": 5,
+    "increment": 5,
+    "model_name": "genguide",
+    "model_postfix": "sup20_exp_s1_s2",
+    "convnet_type": "vit-b-p16",
+    "device": ["0","1"],
+    "seed": [101],
+    "epochs": 10,
+    "ca_epochs": 5,
+    "ca_with_logit_norm": 0,
+    "milestones": [18],
+    "superclass_noise": true,
+    "asymmetric_noise": false,
+    "corruption_percent": 0.2,
+    "modify": true,
+    "neighbors_to_check": 3,
+    "biased": true,
+    "mean_only": false
+,    "N2": true
+}
+
