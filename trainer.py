@@ -33,7 +33,7 @@ def _train(args):
     except OSError as e:
         print(f"Error creating directory: {log_dir} - {e}")
 
-    logfilename = 'logs/{}_{}/{}_{}_{}_{}_{}_{}_{}_{}'.format(args['model_name'], args['model_postfix'], args['prefix'], args['seed'], args['model_name'],args['mode'], args['convnet_type'],
+    logfilename = 'logs/{}_{}/{}_{}_{}_{}_{}_{}'.format(args['model_name'], args['model_postfix'], args['model_name'], args['noise_type']+str(args['noise']), args['convnet_type'],
                                                 args['dataset'], args['init_cls'], args['increment'])
     logging.basicConfig(
         level=logging.INFO,

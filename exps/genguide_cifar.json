@@ -1,7 +1,7 @@
 {
     "prefix": "reproduce",
     "dataset_base": "cifar100_224",
-    "mode": "sup20",
+    "mode": "omni",
     "memory_size": 0,
     "memory_per_class": 0,
     "fixed_memory": false,
@@ -9,7 +9,7 @@
     "init_cls": 5,
     "increment": 5,
     "model_name": "genguide",
-    "model_postfix": "sup20_exp_s1_s2",
+    "model_postfix": "exp_s1_s2",
     "convnet_type": "vit-b-p16",
     "device": ["0","1"],
     "seed": [101],
