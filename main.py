@@ -20,6 +20,8 @@ def main():
         print(args["superclass_noise"])
 
     elif 'cifar10' in args['dataset']:
+        args['init_cls'] = 2
+        args['increment'] = 2
         args['dataset'] = args['dataset']+"_224"
         if args['noise_type'] == 'symmetric':
             args["asymmetric_noise"] = False
